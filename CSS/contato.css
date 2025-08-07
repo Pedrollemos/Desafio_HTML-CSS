@@ -1,0 +1,145 @@
+.ContatoPagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.contato-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+}
+
+.contato-imagem img {
+    width: 200%;
+    height: auto;
+    max-width: 700px;
+    border: none;
+    box-shadow: none;
+}
+
+.formularioContainer {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.formulario h3 {
+    color: #00274C;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.inputGrupo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputGrupo input,
+.inputGrupo select,
+.inputGrupo textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #fff;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+.inputGrupo input:focus,
+.inputGrupo select:focus,
+.inputGrupo textarea:focus {
+    border-color: #00274C;
+    outline: none;
+}
+
+.inputGrupo select {
+    appearance: none;
+    color: #333;
+}
+
+.inputGrupo textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.submitBotão {
+    background-color: #1351d8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitBotão:hover {
+    background-color: #00274C;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header nav ul{
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    footer{
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .redesSociais p{
+        display: none;
+    }
+
+    .redesSociais img,
+    .logo_footer img{
+       height: 25px; 
+    }
+
+    .copyright p{
+        font-size: 8px;
+        line-height: 1.4;
+        max-width: 88%;
+        margin: 0 auto;
+    }
+    
+}

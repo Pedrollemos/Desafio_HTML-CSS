@@ -1,0 +1,233 @@
+
+main section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  
+  .video_carroLancamento iframe {
+    width: 560px;
+    max-width: 100%;
+    height: 315px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .texto_promocional {
+    max-width: 400px;
+    color: #003399;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+
+  .tabelaDosCarros {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  
+  .veiculo-card {
+    background-color: white;
+    border: 2px solid #003399;
+    border-radius: 12px;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .veiculo-card:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .veiculo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .informaçoesVeiculo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .informaçoesVeiculo input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 2px solid #003399;
+    border-radius: 5px;
+  }
+  
+  .texto-container h5 {
+    color: #003399;
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+  }
+  
+  .texto-container p {
+    margin: 0;
+    color: #222;
+    font-size: 0.9rem;
+  }
+  
+  
+  .informaçoesVeiculo img {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  
+  .submit-botao {
+    background-color: #003399;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 40px auto;
+    transition: background-color 0.3s ease;
+    width: 220px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .submit-botao:hover {
+    background-color: #001f66;
+  }
+  
+  
+  footer {
+    background-color: #003399;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .redesSociais p {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .redesSociais a img {
+    width: 30px;
+    margin: 0 8px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+  }
+  
+  .redesSociais a:hover img {
+    filter: brightness(0.7) invert(1);
+  }
+  
+  .copyright p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .logo_footer img {
+    width: 80px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header nav ul{
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    footer{
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .redesSociais p{
+        display: none;
+    }
+
+    .redesSociais img,
+    .logo_footer img{
+       height: 25px; 
+    }
+
+    .copyright p{
+        font-size: 8px;
+        line-height: 1.4;
+        max-width: 88%;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header nav ul{
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    footer{
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .redesSociais p{
+        display: none;
+    }
+
+    .redesSociais img,
+    .logo_footer img{
+       height: 25px; 
+    }
+
+    .copyright p{
+        font-size: 8px;
+        line-height: 1.4;
+        max-width: 88%;
+        margin: 0 auto;
+    }
+    
+}

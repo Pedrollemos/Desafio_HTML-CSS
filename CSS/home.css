@@ -1,0 +1,118 @@
+
+.homeMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  
+  .imagemPrincipal img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+  }
+  
+
+  .textoChamada {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #003399;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .textoChamada a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #003399;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #003399;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .textoChamada a:hover {
+    background-color: #003399;
+    color: white;
+  }
+  
+  footer {
+    background-color: #003399;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .redesSociais p {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .redesSociais a img {
+    width: 30px;
+    margin: 0 8px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+  }
+  
+  .redesSociais a:hover img {
+    filter: brightness(0.7) invert(1);
+  }
+  
+  .copyright p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .logo_footer img {
+    width: 80px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header nav ul{
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    footer{
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .redesSociais p{
+        display: none;
+    }
+
+    .redesSociais img,
+    .logo_footer img{
+       height: 25px; 
+    }
+
+    .copyright p{
+        font-size: 8px;
+        line-height: 1.4;
+        max-width: 88%;
+        margin: 0 auto;
+    }
+    
+}
